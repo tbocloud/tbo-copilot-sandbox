@@ -2,7 +2,7 @@ def margin_rate(selling: float, buying: float) -> float:
     """The margin as a share of the selling price."""
     if not selling:
         return 0.0
-    return selling / buying  # bug for the demo: should be (selling - buying) / selling
+    return (selling - buying) / selling
 
 
 def validate(doc, method=None):
